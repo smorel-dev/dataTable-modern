@@ -1,0 +1,194 @@
+
+
+
+.wrapper {
+  max-width: 96%;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+
+/*****************
+ * DataTable
+ ****************/
+ table.dataTable-v2 {
+  border-spacing: 0;
+  border-collapse: separate;
+  border-radius: 8px;
+  border: 1px solid #eaecf0;
+}
+
+table.dataTable-v2 thead {
+  border: 0;
+}
+
+  table.dataTable-v2 thead > tr {
+    border: 0;
+  }
+
+  table.dataTable-v2 thead > tr > th {
+    border: 0;
+    border-bottom: 1px solid #eaecf0;
+    background: #f9fafb;
+    font-weight: 600;
+    color: #475467;
+  }
+
+    table.dataTable-v2 thead > tr > th:first-child {
+      border-top-left-radius: 8px;
+    }
+
+    table.dataTable-v2 thead > tr > th:last-child {
+      border-top-right-radius: 8px;
+    }
+
+    table.dataTable-v2 tbody > tr:last-child > td:first-child {
+      border-bottom-left-radius: 8px;
+    }
+
+    table.dataTable-v2 tbody > tr:last-child > td:last-child {
+      border-bottom-right-radius: 8px;
+    }
+
+
+table.dataTable-v2 > tbody > tr > td {
+  border: 0;
+}
+
+/* Apply a border to the right of all but the last column */
+table.dataTable-v2 th:not(:last-child),
+table.dataTable-v2 td:not(:last-child) {
+ border-right: 1px solid #eaecf0;
+}
+
+/* Apply a border to the bottom of all but the last row */
+table.dataTable-v2 > thead>tr:not(:last-child)>th,
+table.dataTable-v2 > thead>tr:not(:last-child)>td,
+table.dataTable-v2 > tbody>tr:not(:last-child)>th,
+table.dataTable-v2 > tbody>tr:not(:last-child)>td,
+table.dataTable-v2 > tfoot>tr:not(:last-child)>th,
+table.dataTable-v2 > tfoot>tr:not(:last-child)>td,
+table.dataTable-v2 > tr:not(:last-child)>td,
+table.dataTable-v2 > tr:not(:last-child)>th,
+table.dataTable-v2 > thead:not(:last-child),
+table.dataTable-v2 > tbody:not(:last-child),
+table.dataTable-v2 > tfoot:not(:last-child) {
+ border-bottom: 1px solid #eaecf0;
+}
+
+/* Background on row pair  */
+table.table.dataTable.table-striped > tbody > tr:nth-of-type(2n+1) > * {
+  box-shadow: inset 0 0 0 9999px transparent;
+}
+
+table.table.dataTable.table-striped > tbody > tr:nth-of-type(2n+2) > * {
+  box-shadow: inset 0 0 0 9999px #f9fafb;
+}
+
+/* Hide outline */
+table.dataTable thead > tr > th.dt-orderable-asc:hover, 
+table.dataTable thead > tr > th.dt-orderable-desc:hover, 
+table.dataTable thead > tr > td.dt-orderable-asc:hover, 
+table.dataTable thead > tr > td.dt-orderable-desc:hover {
+  outline: 0;
+}
+
+/* Icons th sort */
+table.dataTable-v2 thead > tr > th.dt-orderable-asc span.dt-column-order:before,
+table.dataTable-v2 thead > tr > th.dt-ordering-asc span.dt-column-order:before,
+table.dataTable-v2 thead > tr > td.dt-orderable-asc span.dt-column-order:before,
+table.dataTable-v2 thead > tr > td.dt-ordering-asc span.dt-column-order:before {
+  content: "\e113";
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  font-size: 12px;
+}
+
+table.dataTable-v2 thead > tr > th.dt-orderable-desc span.dt-column-order:after,
+table.dataTable-v2 thead > tr > th.dt-ordering-desc span.dt-column-order:after,
+table.dataTable-v2 thead > tr > td.dt-orderable-desc span.dt-column-order:after,
+table.dataTable-v2 thead > tr > td.dt-ordering-desc span.dt-column-order:after {
+  content: "\e114";
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  font-size: 12px;
+}
+
+
+
+/* Paginate : TODO : replace id with a class  */
+#data-table-2_wrapper .pagination > li > a,
+#data-table-2_wrapper .pagination > li > span {
+  color: #344054;
+}
+
+  #data-table-2_wrapper .pagination > li > a:focus,
+  #data-table-2_wrapper .pagination > li > a:hover,
+  #data-table-2_wrapper .pagination > li > span:focus,
+  #data-table-2_wrapper .pagination > li > span:hover {
+    background: #efefef;
+    color: #333333;
+  }
+
+    #data-table-2_wrapper .pagination > .active > a,
+    #data-table-2_wrapper .pagination > .active > a:focus,
+    #data-table-2_wrapper .pagination > .active > a:hover,
+    #data-table-2_wrapper .pagination > .active > span,
+    #data-table-2_wrapper .pagination > .active > span:focus,
+    #data-table-2_wrapper .pagination > .active > span:hover {
+      background-color: #278dc8;
+      border-color: #278dc8;
+      color: #ffffff;
+    }
+
+  #data-table-2_wrapper .pagination > li > a:focus {
+    outline: 0;
+  }
+
+  #data-table-2_wrapper .pagination > li:first-child > a,
+  #data-table-2_wrapper .pagination > li:first-child > span {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  #data-table-2_wrapper .pagination > li:last-child > a,
+  #data-table-2_wrapper .pagination > li:last-child > span {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+
+/*****************
+ * DataTable 1
+ ****************/
+#data-table-1 {
+
+}
+
+#data-table-1_wrapper {
+  padding-bottom: 50px;
+}
+
+/*****************
+ * DataTable 2
+ ****************/
+#data-table-2 {
+
+}
+
+#data-table-2 .col-albumId,
+#data-table-2 .col-id,
+#data-table-2 .col-thumbnailUrl {
+  text-align: center;
+}
+
+
+#data-table-2_wrapper {
+  padding-bottom: 50px;
+}
